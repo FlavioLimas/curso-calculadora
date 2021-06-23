@@ -1,6 +1,9 @@
 package br.com.calc.visao;
 
 import javax.swing.JFrame;
+import javax.swing.border.Border;
+
+import java.awt.*;
 
 public class Calculadora extends JFrame {
 
@@ -15,6 +18,12 @@ public class Calculadora extends JFrame {
     }
 
     private void organizarLayout() {
+        setLayout(new BorderLayout());
+
+        Display display = new Display();
+        add(display, BorderLayout.NORTH);
+        Teclado teclado = new Teclado();
+        add(teclado, BorderLayout.CENTER);
     }
 
     public static void main(String[] args) {
