@@ -1,9 +1,9 @@
 package br.com.calc.visao;
 
-import javax.swing.JFrame;
-import javax.swing.border.Border;
+import java.awt.BorderLayout;
+import java.awt.Dimension;
 
-import java.awt.*;
+import javax.swing.JFrame;
 
 public class Calculadora extends JFrame {
 
