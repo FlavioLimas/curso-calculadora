@@ -2,6 +2,8 @@ package br.com.calc.visao;
 
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.GridBagLayout;
+
 import javax.swing.JPanel;
 
 public class Teclado extends JPanel {
@@ -11,6 +13,8 @@ public class Teclado extends JPanel {
     private final Color COR_LARANJA = new Color(242, 163, 60);
 
     public Teclado() {
+
+        GridBagLayout layout = new GridBagLayout();
 
         setLayout(new GridLayout(5, 4));
 
