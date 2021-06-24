@@ -1,14 +1,18 @@
 package br.com.calc.visao;
 
-import javax.swing.JPanel;
+import java.awt.Color;
+
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 public class Display extends JPanel {
 
     private final JLabel label;
-    
+
     public Display() {
-        label = new JLabel();
+        setBackground(new Color(46, 49, 50));
+        label = new JLabel("1234,56");
+        add(label);
     }
     
 }
