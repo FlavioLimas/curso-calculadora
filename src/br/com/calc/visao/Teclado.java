@@ -23,6 +23,21 @@ public class Teclado extends JPanel {
         add(new Botao("8", COR_CINZA_CLARO));
         add(new Botao("9", COR_CINZA_CLARO));
         add(new Botao("*", COR_LARANJA));
+        
+        add(new Botao("6", COR_CINZA_CLARO));
+        add(new Botao("5", COR_CINZA_CLARO));
+        add(new Botao("4", COR_CINZA_CLARO));
+        add(new Botao("-", COR_LARANJA));
+        
+        add(new Botao("3", COR_CINZA_CLARO));
+        add(new Botao("2", COR_CINZA_CLARO));
+        add(new Botao("1", COR_CINZA_CLARO));
+        add(new Botao("+", COR_LARANJA));
+        
+        add(new Botao("0", COR_CINZA_CLARO));
+        add(new Botao("", COR_CINZA_CLARO));
+        add(new Botao(",", COR_CINZA_CLARO));
+        add(new Botao("=", COR_LARANJA));
     }
     
 }
