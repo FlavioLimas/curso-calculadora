@@ -3,6 +3,7 @@ package br.com.calc.visao;
 import java.awt.Color;
 import java.awt.Font;
 
+import javax.swing.BorderFactory;
 import javax.swing.JButton;
 
 public class Botao extends JButton {
@@ -12,5 +13,6 @@ public class Botao extends JButton {
         setOpaque(true);
         setBackground(cor);
         setFont(new Font("courier", Font.PLAIN, 25));
+        setBorder(BorderFactory.createLineBorder(Color.BLACK));
     }
 }
