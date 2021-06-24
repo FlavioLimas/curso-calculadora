@@ -12,6 +12,7 @@ public class Display extends JPanel {
     public Display() {
         setBackground(new Color(46, 49, 50));
         label = new JLabel("1234,56");
+        label.setForeground(Color.WHITE);
         add(label);
     }
     
