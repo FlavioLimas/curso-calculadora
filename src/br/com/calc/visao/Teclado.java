@@ -18,6 +18,11 @@ public class Teclado extends JPanel {
         add(new Botao("+/-", COR_CINZA_ESCURO));
         add(new Botao("%", COR_CINZA_ESCURO));
         add(new Botao("/", COR_LARANJA));
+        
+        add(new Botao("7", COR_CINZA_CLARO));
+        add(new Botao("8", COR_CINZA_CLARO));
+        add(new Botao("9", COR_CINZA_CLARO));
+        add(new Botao("*", COR_LARANJA));
     }
     
 }
