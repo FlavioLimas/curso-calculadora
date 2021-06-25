@@ -6,6 +6,7 @@ import java.awt.GridBagLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 public class Teclado extends JPanel implements ActionListener {
@@ -66,7 +67,9 @@ public class Teclado extends JPanel implements ActionListener {
     
     @Override
     public void actionPerformed(ActionEvent e) {
-        System.out.println("Executado...");
-        
+        if (e.getSource() instanceof JButton) {
+            JButton botao = (JButton) e.getSource();
+            System.out.println(botao.getText());
+        }
     }
 }
