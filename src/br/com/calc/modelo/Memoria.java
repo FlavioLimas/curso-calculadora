@@ -14,6 +14,8 @@ public class Memoria {
         return instancia;
     }
 
-    
+    public String getTextoAtual() {
+        return textoAtual.isEmpty() ? "0" : textoAtual;
+    }
     
 }
