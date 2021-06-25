@@ -3,10 +3,11 @@ package br.com.calc.visao;
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionListener;
 
 import javax.swing.JPanel;
 
-public class Teclado extends JPanel {
+public class Teclado extends JPanel implements ActionListener {
 
     private final Color COR_CINZA_ESCURO = new Color(68, 68, 68);
     private final Color COR_CINZA_CLARO = new Color(99, 99, 99);
