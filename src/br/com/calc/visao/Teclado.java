@@ -3,6 +3,7 @@ package br.com.calc.visao;
 import java.awt.Color;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JPanel;
@@ -59,7 +60,13 @@ public class Teclado extends JPanel implements ActionListener {
         c.gridx = x;
         c.gridy = y;
         Botao botao = new Botao(texto, cor);
+        botao.addActionListener(this);
         add(botao, c);
     }
     
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        System.out.println("Executado...");
+        
+    }
 }
