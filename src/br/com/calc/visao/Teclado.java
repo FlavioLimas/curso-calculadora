@@ -19,6 +19,10 @@ public class Teclado extends JPanel {
 
         setLayout(layout);
         
+        c.weightx = 1;
+        c.weighty = 1;
+        c.fill = GridBagConstraints.BOTH;
+
         adicionarBotao("AC", COR_CINZA_ESCURO, c, 0, 0);
         adicionarBotao("+/-", COR_CINZA_ESCURO, c, 1, 0);
         adicionarBotao("%", COR_CINZA_ESCURO, c, 2, 0);
