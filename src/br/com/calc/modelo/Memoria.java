@@ -33,7 +33,7 @@ public class Memoria {
             textoAtual = "";
         } else {
             textoAtual += valor;
-            observadores.forEach(o -> o.valorAlterado(textoAtual));
+            observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
         }
     }
 }
