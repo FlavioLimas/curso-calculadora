@@ -27,4 +27,9 @@ public class Memoria {
         return textoAtual.isEmpty() ? "0" : textoAtual;
     }
     
+    public void processarComentado(String valor) {
+        textoAtual += valor;
+
+        observadores.forEach(o -> o.valorAlterado(textoAtual));
+    }
 }
