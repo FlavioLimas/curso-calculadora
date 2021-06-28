@@ -41,6 +41,7 @@ public class Memoria {
     public void processarComando(String valor) {
 
         TipoComando tipoComando = detectarTipoComando(textoAtual);
+        System.out.println(tipoComando);
 
         if("AC".equals(valor)) {
             textoAtual = "";
@@ -54,6 +55,16 @@ public class Memoria {
 
         if(textoAtual.isEmpty() && texto == "0") {
             return null;
+        }
+
+        try {
+            Integer.parseInt(texto);
+            return TipoComando.NUMERO;
+        } catch (NumberFormatException e) {
+            // Quando não for numero...
+            if ("AC".equals(texto)) {
+                return TipoComando.ZERAR;
+            }
         }
 
         return null;
