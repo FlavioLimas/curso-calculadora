@@ -40,11 +40,18 @@ public class Memoria {
     
     public void processarComando(String valor) {
 
+        TipoComando tipoComando = detectarTipoComando(textoAtual);
+
         if("AC".equals(valor)) {
             textoAtual = "";
         } else {
             textoAtual += valor;
             observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
         }
+    }
+
+    private TipoComando detectarTipoComando(String textoAtual2) {
+        
+        return null;
     }
 }
