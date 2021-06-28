@@ -64,9 +64,20 @@ public class Memoria {
             // Quando não for numero...
             if ("AC".equals(texto)) {
                 return TipoComando.ZERAR;
+            } else if ("/".equals(texto)) {
+                return TipoComando.DIV;
+            } else if ("*".equals(texto)) {
+                return TipoComando.MULT;
+            } else if ("+".equals(texto)) {
+                return TipoComando.SOMA;
+            } else if ("-".equals(texto)) {
+                return TipoComando.SUB;
+            } else if ("=".equals(texto)) {
+                return TipoComando.IGUAL;
+            } else if (",".equals(texto)) {
+                return TipoComando.VIRGULA;
             }
         }
-
         return null;
     }
 }
