@@ -5,6 +5,17 @@ import java.util.List;
 
 public class Memoria {
 
+    private enum TipoComando {
+        ZERAR,
+        NUMERO,
+        DIV,
+        MULT,
+        SUB,
+        SOMA,
+        IGUAL,
+        VIRGULA;
+    };
+
     private static final Memoria instancia = new Memoria();
 
     private final List<MemoriaObservador> observadores = new ArrayList<>();
