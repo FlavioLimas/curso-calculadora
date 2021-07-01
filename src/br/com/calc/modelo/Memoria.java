@@ -83,9 +83,9 @@ public class Memoria {
             resultado = numeroBuffer / numeroAtual;
         }
 
-        String resultadoString = Double.toString(resultado).replace(".", ",");
-        boolean inteiro = resultadoString.endsWith(",0");
-        return inteiro ? resultadoString.replace(",0", "") : resultadoString;
+        String texto = Double.toString(resultado).replace(".", ",");
+        boolean inteiro = texto.endsWith(",0");
+        return inteiro ? texto.replace(",0", "") : texto;
     }
 
     private TipoComando detectarTipoComando(String texto) {
