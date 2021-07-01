@@ -65,6 +65,10 @@ public class Memoria {
     }
 
     private String obterResultadoOperacao() {
+        if (ultimaOperacao == null) {
+            return textoAtual;
+        }
+        
         return textoAtual;
     }
 
