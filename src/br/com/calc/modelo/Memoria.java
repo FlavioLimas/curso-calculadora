@@ -58,7 +58,12 @@ public class Memoria {
             substituir = false;
         } else {
             substituir = true;
+            textoAtual = obterResultadoOperacao();
         }
+    }
+
+    private String obterResultadoOperacao() {
+        return textoAtual;
     }
 
     private TipoComando detectarTipoComando(String texto) {
