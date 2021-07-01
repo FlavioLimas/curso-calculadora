@@ -69,7 +69,7 @@ public class Memoria {
         }
 
         double numeroBuffer = Double.parseDouble(textoBuffer.replace(",", "."));
-        double numeroAtual = Double.parseDouble(textoBuffer.replace(",", "."));
+        double numeroAtual = Double.parseDouble(textoAtual.replace(",", "."));
 
         double resultado = 0;
 
