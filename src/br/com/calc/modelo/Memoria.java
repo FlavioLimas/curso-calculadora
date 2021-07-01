@@ -43,8 +43,7 @@ public class Memoria {
     
     public void processarComando(String texto) {
 
-        TipoComando tipoComando = detectarTipoComando(textoAtual);
-        System.out.println(tipoComando);
+        TipoComando tipoComando = detectarTipoComando(texto);
 
         if (tipoComando == null) {
             return;            
