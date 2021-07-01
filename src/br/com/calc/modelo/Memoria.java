@@ -68,7 +68,15 @@ public class Memoria {
         if (ultimaOperacao == null) {
             return textoAtual;
         }
-        
+
+        double numeroBuffer = Double.parseDouble(textoBuffer.replace(",", "."));
+        double numeroAtual = Double.parseDouble(textoBuffer.replace(",", "."));
+
+        double resultado = 0;
+
+        if (ultimaOperacao == TipoComando.SOMA) {
+            resultado = numeroBuffer + numeroAtual;
+        }
         return textoAtual;
     }
 
