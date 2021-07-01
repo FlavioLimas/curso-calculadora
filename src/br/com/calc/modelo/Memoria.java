@@ -78,6 +78,8 @@ public class Memoria {
             resultado = numeroBuffer + numeroAtual;
         } else if(ultimaOperacao == TipoComando.SUB) {
             resultado = numeroBuffer - numeroAtual;
+        } else if(ultimaOperacao == TipoComando.MULT) {
+            resultado = numeroBuffer * numeroAtual;
         }
         return textoAtual;
     }
