@@ -46,11 +46,13 @@ public class Memoria {
         TipoComando tipoComando = detectarTipoComando(textoAtual);
         System.out.println(tipoComando);
 
-        if("AC".equals(valor)) {
+        if (tipoComando == null) {
+            return;            
+        } else if (tipoComando == TipoComando.ZERAR) {
             textoAtual = "";
-        } else {
-            textoAtual += valor;
-            observadores.forEach(o -> o.valorAlterado(getTextoAtual()));
+            textoBuffer = "";
+            substituir = false;
+            ultimaOperacao = null;
         }
     }
 
