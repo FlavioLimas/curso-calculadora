@@ -59,6 +59,8 @@ public class Memoria {
         } else {
             substituir = true;
             textoAtual = obterResultadoOperacao();
+            textoBuffer = textoAtual;
+            ultimaOperacao = tipoComando;
         }
     }
 
