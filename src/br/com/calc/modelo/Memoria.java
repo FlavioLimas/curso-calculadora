@@ -41,7 +41,7 @@ public class Memoria {
         return textoAtual.isEmpty() ? "0" : textoAtual;
     }
     
-    public void processarComando(String valor) {
+    public void processarComando(String texto) {
 
         TipoComando tipoComando = detectarTipoComando(textoAtual);
         System.out.println(tipoComando);
@@ -53,6 +53,9 @@ public class Memoria {
             textoBuffer = "";
             substituir = false;
             ultimaOperacao = null;
+        } else if(tipoComando == TipoComando.NUMERO || tipoComando == TipoComando.VIRGULA) {
+            textoAtual = substituir ? texto : textoAtual + texto;
+            substituir = false;
         }
     }
 
@@ -79,7 +82,7 @@ public class Memoria {
                 return TipoComando.SUB;
             } else if ("=".equals(texto)) {
                 return TipoComando.IGUAL;
-            } else if (",".equals(texto)) {
+            } else if (",".equals(texto) && !textoAtual.contains(",")) {
                 return TipoComando.VIRGULA;
             }
         }
